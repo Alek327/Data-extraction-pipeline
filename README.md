@@ -6,7 +6,6 @@
 **Status:** Source-available for inspection and evaluation only.  
 No permission is granted to use, copy, modify, or distribute this code without explicit authorization from the author.
 
----
 
 ## Purpose of the Pipeline
 
@@ -16,7 +15,6 @@ The pipeline provides a semi-automated, fully offline method for extracting text
 
 The system was validated using peer-reviewed public health intervention trials and is designed to be conservative, prioritising methodological defensibility over maximal recall.
 
----
 
 ## General Workflow
 
@@ -36,7 +34,6 @@ The full text of a PDF is converted into plain text and split into paragraph-lik
 
 Each segment receives a unique identifier and retains a reference to the source file. No content is discarded at this stage; filtering occurs only during classification.
 
----
 
 ## Classification into Evidence Categories
 
@@ -46,7 +43,6 @@ Classification is rule-based rather than model-based. For example, intervention 
 
 Segments that do not meet extractable criteria are assigned to a neutral category and excluded from synthesis.
 
----
 
 ## Strict and Lenient Review Modes
 
@@ -60,23 +56,20 @@ Less restrictive rules apply. Descriptive, contextual, and some methodological c
 
 All exclusion logic is recorded in the output audit trail.
 
----
 
-## Explicit Exclusion Logic and Audit Trail
+##  Exclusion Logic and Audit 
 
 Every segment is either included or excluded with an explicit reason. Exclusion reasons include structural noise, background framing, eligibility criteria, methodological content, theoretical discussion, or tabular material.
 
 All decisions are written to the output CSV alongside the original text, enabling inspection, verification, and reproducibility. No content is silently discarded.
 
----
 
-## Output Files
+## Outputs
 
 The primary output is a CSV file containing all extracted segments. Each row includes the source file name, segment identifier, assigned category, classification rationale, exclusion reason (if applicable), an exclusion flag, and the original text.
 
 An optional Markdown file summarises included segments into a thematic evidence matrix. Themes are derived from recurring phrases and illustrated using verbatim evidence, supporting narrative synthesis and manuscript preparation.
 
----
 
 ## Intended Use and Scope
 
@@ -84,7 +77,6 @@ The pipeline is intended for researchers conducting scoping reviews, qualitative
 
 The system does not assess study quality, risk of bias, or causal validity.
 
----
 
 ## Technical Requirements
 
