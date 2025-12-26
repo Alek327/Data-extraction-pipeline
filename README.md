@@ -9,7 +9,6 @@ The pipeline provides a semi-automated, fully offline method for extracting text
 
 The system was validated using peer-reviewed public health intervention trials and is designed to be conservative, prioritising methodological defensibility over maximal recall.
 
----
 
 ### General Workflow
 
@@ -21,7 +20,6 @@ The pipeline operates in three deterministic stages:
 
 Running the pipeline multiple times on the same input produces identical results.
 
----
 
 ### Text Extraction and Segmentation
 
@@ -39,7 +37,7 @@ Classification is rule-based rather than model-based. For example, intervention 
 
 Segments that do not meet extractable criteria are assigned to a neutral category and excluded from synthesis.
 
----
+
 
 ### Strict and Lenient Review Modes
 
@@ -53,7 +51,7 @@ Less restrictive rules apply. Descriptive, contextual, and some methodological c
 
 All exclusion logic is recorded in the output audit trail.
 
----
+
 
 ### Explicit Exclusion Logic and Audit Trail
 
@@ -61,7 +59,7 @@ Every segment is either included or excluded with an explicit reason. Exclusion 
 
 All decisions are written to the output CSV alongside the original text, enabling inspection, verification, and reproducibility. No content is silently discarded.
 
----
+
 
 ### Output Files
 
@@ -69,7 +67,7 @@ The primary output is a CSV file containing all extracted segments. Each row inc
 
 An optional Markdown file summarises included segments into a thematic evidence matrix. Themes are derived from recurring phrases and illustrated using verbatim evidence, supporting narrative synthesis and manuscript preparation.
 
----
+
 
 ### Intended Use and Scope
 
@@ -77,7 +75,6 @@ The pipeline is intended for researchers conducting scoping reviews, qualitative
 
 The system does not assess study quality, risk of bias, or causal validity.
 
----
 
 ### Technical Requirements
 
@@ -98,7 +95,7 @@ python cycle_extraction_pipeline_offline_v1.py Bernshtein2017.pdf bernstein_segm
 Reproducibility
 All classification decisions are deterministic and rule-based. There is no stochastic behaviour, model training, or dependence on external services. This ensures auditability and suitability for peer-reviewed research.
 
----
+
 
 This repository provides a reproducible and auditable foundation for semi-automated qualitative evidence extraction from PDF-based research literature.
 
