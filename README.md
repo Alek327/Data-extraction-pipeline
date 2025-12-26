@@ -1,6 +1,13 @@
 # Semi-Automated Qualitative Evidence Extraction from Research Papers in PDFs
 ## Offline, Rule-Based Pipeline
 
+Copyright © 2025 Oleksandr Galychyn. All rights reserved.
+
+This repository is provided for inspection and evaluation only.
+No permission is granted to use, copy, modify, or distribute this code
+without explicit authorization from the author.
+
+
 ### Purpose of the Pipeline
 
 This pipeline supports qualitative and mixed-methods evidence synthesis from research papers in PDF format, particularly in public health, transport, and intervention research. Manual extraction and coding of narrative evidence is time-consuming, difficult to reproduce, and often inconsistent across reviewers.
