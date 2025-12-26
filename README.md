@@ -27,7 +27,6 @@ The full text of a PDF is converted into plain text and split into paragraph-lik
 
 Each segment receives a unique identifier and retains a reference to the source file. No content is discarded at this stage; filtering occurs only during classification.
 
----
 
 ### Classification into Evidence Categories
 
