@@ -26,7 +26,6 @@ The pipeline operates in three deterministic stages:
 
 Running the pipeline multiple times on the same input produces identical results.
 
----
 
 ## Text Extraction and Segmentation
 
