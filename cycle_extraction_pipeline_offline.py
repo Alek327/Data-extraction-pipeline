@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-cycle_extraction_pipeline_offline_v1_0_3.py
+cycle_extraction_pipeline_offline.py
 
 OFFLINE (0-API) qualitative coding + summarization for public health / intervention trials.
 
@@ -915,3 +915,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
